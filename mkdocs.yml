@@ -1,8 +1,11 @@
 site_name: Glip Integrations Guide
 site_url: https://github.com/grokify/glip-integrations-guide
+site_favicon: favicon.ico
 repo_url: https://github.com/grokify/glip-integrations-guide
 docs_dir: docs
 theme: readthedocs
+extra_css: [extra.css]
+extra_javascript: [fonts.js]
 pages:
 # Integations Guide:
 - ['index.md', 'Overview', 'Introduction']
