@@ -14,4 +14,4 @@ pages:
 - ['webhook-integrations.md', 'Overview', 'Inbound Webhooks']
 
 # Apps
-- ['tableau.md', 'Apps', 'Tableau']
+- ['apps/tableau.md', 'Apps', 'Tableau']

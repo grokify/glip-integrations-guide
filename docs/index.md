@@ -18,4 +18,4 @@ Read on for how to use these capabilities and a list of integration notes.
 
 Integrations notes are available for the following apps:
 
-* [Tableau](tableau.md)
+* [Tableau](apps/tableau.md)
