@@ -1,5 +1,3 @@
-# Glip Integration Guide
-
 This guide covers the major ways to create integrations with Glip from out-of-the-box integrations to custom development via APIs listed below.
 
 * Pre-Built Integrations
@@ -18,8 +16,8 @@ Specific information is available for the following apps:
 
 Tableau
 
-## Calendar Integrations
+# Calendar Integrations
 
-## File Sharing Integrations
+# File Sharing Integrations
 
-## Notification Integrations
+# Notification Integrations
