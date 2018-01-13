@@ -17,3 +17,9 @@ Read on for how to use these capabilities and a list of integration notes.
 Specific information is available for the following apps:
 
 Tableau
+
+## Calendar Integrations
+
+## File Sharing Integrations
+
+## Notification Integrations

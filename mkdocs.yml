@@ -8,7 +8,7 @@ extra_css: [extra.css]
 extra_javascript: [fonts.js]
 pages:
 # Integations Guide:
-- ['index.md', 'Overview', 'Introduction']
+- ['index.md', 'Overview', 'Glip Integrations Guide']
 - ['pre-built-integrations.md', 'Overview', 'Pre-built Integrations']
 - ['email-integrations.md', 'Overview', 'Email Integrations']
 - ['webhook-integrations.md', 'Overview', 'Inbound Webhooks']

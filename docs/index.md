@@ -1,6 +1,6 @@
 ![](ringcentral-glip.jpg)
 
-# Glip Integration Guide
+# Glip Integrations Guide
 
 This guide covers the major ways to create integrations with Glip from out-of-the-box integrations to custom development via APIs listed below.
 
