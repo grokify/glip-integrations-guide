@@ -1,0 +1,14 @@
+site_name: Glip Integrations Guide
+site_url: https://github.com/grokify/glip-integrations-guide
+repo_url: https://github.com/grokify/glip-integrations-guide
+docs_dir: docs
+theme: readthedocs
+pages:
+# Integations Guide:
+- ['index.md', 'Overview', 'Introduction']
+- ['pre-built-integrations.md', 'Overview', 'Pre-built Integrations']
+- ['email-integrations.md', 'Overview', 'Email Integrations']
+- ['webhook-integrations.md', 'Overview', 'Inbound Webhooks']
+
+# Apps
+- ['tableau.md', 'Apps', 'Tableau']
