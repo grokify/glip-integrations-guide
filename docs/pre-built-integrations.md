@@ -1,23 +1,15 @@
-This guide covers the major ways to create integrations with Glip from out-of-the-box integrations to custom development via APIs listed below.
-
-* Pre-Built Integrations
-* Zapier
-* Email
-* Inbound Webhooks
-* Outbound Webhooks and Subscription API
-* Bot Users
-* REST API
-
-Anyone can use pre-built integrations, Zapier and email, while some development abilities are necessary for the rest.
-
-Read on for how to use these capabilities and a list of integration notes.
-
-Specific information is available for the following apps:
-
-Tableau
+Glip comes with a set of integrations that work out of the box including those built by RingCentral and those built by our partners.
 
 # Calendar Integrations
 
 # File Sharing Integrations
 
 # Notification Integrations
+
+# Bot Integrations
+
+* [Asana bot by Kore.ai]()*
+* [Cloze bot by Cloze](https://apps1.ringcentral.com/app/807386020-807386020-tleh1qSRR422oXEvO-aCIw~lzrEm_ZQRom--KkDFcr_AQ-1210)
+* [Salesforce by Kore.ai]
+* [Trello bot by Kore.ai](https://apps1.ringcentral.com/app/807386020-807386020-tleh1qSRR422oXEvO-aCIw~lzrEm_ZQRom--KkDFcr_AQ-1210)
+* [Twitter bot by Kore.ai](https://apps1.ringcentral.com/app/1158630021-899837023-BsxqZkBRQaWJ414y5EQOUg~nhmg6XYlQxSfVQAw6Ca8uQ-1210)

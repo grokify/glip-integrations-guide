@@ -1,4 +1,4 @@
-![](ringcentral-glip.jpg)
+![](ringcentral-glip-integrations-guide.png)
 
 # Glip Integrations Guide
 
