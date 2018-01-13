@@ -1,6 +1,6 @@
 # Tableau
 
-You can use Glip's team email to automatically send notifications to your Glip team.
+You can use Glip's team email to automatically send notifications to your Glip team. To do this you will need to set your Tableau user email to the Glip team email where you want to send the notifications. 
 
 To do this, use the following instructions:
 
@@ -8,12 +8,18 @@ To do this, use the following instructions:
 
 ![](images/tableau_01_glip_email_2.png)
 
-2) Go to `My Account Settings` and then set your `Email` to your Glip team email and then click `Save Changes`
+2) Go to `My Account Settings` to chage your email address.
 
 ![](images/tableau_02_my_account_settings_2.png)
+
+3) Set your `Email` to your Glip team email and then click `Save Changes`.
+
 ![](images/tableau_03_update_email_2.png)
 
-3) Go to the Tableau workbook view you want to get a subscription for, then click `Subscribe`. Select `This View` or `Entire Workbook` and then click `Subscribe`
+4) Go to the Tableau workbook view you want to get a subscription for, then click `Subscribe`. Select `This View` or `Entire Workbook` and then click `Subscribe`
 
 ![](images/tableau_04_subscribe_2.png)
-![](images/tableau_05_subscribed_2.png)
+
+When the subscription has been created you will see the `Subscription successfully saved.` message.
+
+![](images/tableau_05_subscribed.png)
