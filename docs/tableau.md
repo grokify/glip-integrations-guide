@@ -1,6 +1,8 @@
-# Tableau
+# Tableau-Glip Email Subscription
 
-You can use Glip's team email to automatically send notifications to your Glip team. To do this you will need to set your Tableau user email to the Glip team email where you want to send the notifications. 
+You can use Glip's team email to automatically send notifications to your Glip team. You will receive Glip posts with images of dashboards and links to Tableau.
+
+To do this you will need to set your Tableau user email to the Glip team email where you want to send the notifications. 
 
 To do this, use the following instructions:
 
