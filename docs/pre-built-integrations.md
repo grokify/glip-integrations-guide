@@ -8,8 +8,8 @@ Glip comes with a set of integrations that work out of the box including those b
 
 # Bot Integrations
 
-* [Asana bot by Kore.ai]()*
-* [Cloze bot by Cloze](https://apps1.ringcentral.com/app/807386020-807386020-tleh1qSRR422oXEvO-aCIw~lzrEm_ZQRom--KkDFcr_AQ-1210)
-* [Salesforce by Kore.ai]
-* [Trello bot by Kore.ai](https://apps1.ringcentral.com/app/807386020-807386020-tleh1qSRR422oXEvO-aCIw~lzrEm_ZQRom--KkDFcr_AQ-1210)
-* [Twitter bot by Kore.ai](https://apps1.ringcentral.com/app/1158630021-899837023-BsxqZkBRQaWJ414y5EQOUg~nhmg6XYlQxSfVQAw6Ca8uQ-1210)
+* [Asana bot by Kore.ai](https://www.ringcentral.com/apps/asana-bot-ringcentral-glip-kore-ai)
+* [Cloze bot by Cloze](https://www.ringcentral.com/apps/clozebot-glip)
+* [Salesforce by Kore.ai](https://www.ringcentral.com/apps/salesforce-bot-ringcentral-glip-kore-ai)
+* [Trello bot by Kore.ai](https://www.ringcentral.com/apps/trello-bot-ringcentral-glip-kore-ai)
+* [Twitter bot by Kore.ai](https://www.ringcentral.com/apps/twitter-bot-ringcentral-glip-kore-ai)
