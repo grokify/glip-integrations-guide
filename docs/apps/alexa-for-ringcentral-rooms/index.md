@@ -38,7 +38,7 @@ This user needs an Office 365 licenses.
 
 A simple way to do this can be performed with the following steps:
 
-1. navigate to the "Microsoft 365 admin center"
+1. navigate to `Admin` or the "Microsoft 365 admin center"
 2. navigate to `Home` > `Active users` and then click `+ Add a user`
 3. set a Display name and Username. The Username can be somthing like `rcrooms`
 4. set an appropriate role. If you don't have a custom role to use, you can use “Global adimistrator” for testing purposes.
