@@ -2,6 +2,8 @@
 
 :warning: **DRAFT** :warning:
 
+> Note: This integration guide is for using RingCentral Office. Modifications may be needed when using RingCentral Contact Center.
+
 ## Overview
 
 Attribution is the ability to identify the source of a phone call, typically to evaluate the effectiveness of various ad campains that have a call to action (CTA) that involves making a phone call.
