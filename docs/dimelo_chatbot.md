@@ -276,21 +276,18 @@ Recap of an API request:
 
 This method allows you to create new content. It can be a reply to another content or content that initiates discussion. It use token’s user as content user. Content will be created in Dimelo Digital, but not yet pushed synchronously into external source.
 
-**HTTP method:​** `POST`
-**Path:​** `/1.0/contents`
-**Pagination:​** no.
-**Extra parameters:**
-
-* `author_id`: The identity id of content. This parameter is not mandatory, by default it use the token’s user first identity on source.
-* `body`: The content’s body. This parameter is mandatory.
-* `in_reply_to_id`: The content’s id you want to reply to. If omitted, a new discussion will be
+* **HTTP method:​** `POST`
+* **Path:​** `/1.0/contents`
+* **Pagination:​** no.
+* **Extra parameters:**
+  * `author_id`: The identity id of content. This parameter is not mandatory, by default it use the token’s user first identity on source.
+  * `body`: The content’s body. This parameter is mandatory.
+  * `in_reply_to_id`: The content’s id you want to reply to. If omitted, a new discussion will be
 created. If source does not support to initiate discussion this parameter is mandatory.
-* `private`: Created contents are public by default, set this parameter to "1" in order to
-create a private reply.
-* `source_id`: The source to create content to. If you specify `in_reply_to_id` parameter,
+  * `private`: Created contents are public by default, set this parameter to "1" in order to create a private reply.
+  * `source_id`: The source to create content to. If you specify `in_reply_to_id` parameter,
 source will be determined from. Otherwise, this parameter is mandatory.
-
-**Authorization:** only users that can reply or initiate discussion on given source. it renders also an error if in_reply_to isn’t synchronized or if in_reply_to content is not under an open intervention.
+* **Authorization:** only users that can reply or initiate discussion on given source. it renders also an error if in_reply_to isn’t synchronized or if in_reply_to content is not under an open intervention.
 
 Reply format:
 
@@ -363,14 +360,12 @@ Description of the API request:
 
 This method creates a new intervention or reopen it. In case of success it renders the intervention, otherwise, it renders an error (422 HTTP code). This method opens intervention as access token’s user.
 
-HTTP method:​ POST
-Path:​ /1.0/interventions
-Pagination:​ no.
-
-Extra parameters:
-● content_id: The content to create intervention on (mandatory).
-Authorization: no, but it renders an error if intervention can’t be created or reopened (already
-opened, etc.).
+* **HTTP method:​** `POST`
+* **Path:​** `/1.0/interventions`
+* **Pagination:**​ no.
+* **Extra parameters:**
+  * `content_id`: The content to create intervention on (mandatory).
+  * Authorization: no, but it renders an error if intervention can’t be created or reopened (already opened, etc.).
 
 Format of the answer:
 
@@ -410,18 +405,26 @@ Format of the answer:
 ```
 
 Example of a request:
-curl -X POST "https://xxxxxxxxx.api.engagement.dimelo.com/1.0/interventions?access_token=yyyyyyyyyyy&co ntent_id=c93e3586250ff60181b6c2f0"
-Parameters to transfer :
-● access_token :​ API identification token
-● content_id :​ Content’s ID to which the intervention is to be associated
 
+`curl -X POST "https://xxxxxxxxx.api.engagement.dimelo.com/1.0/interventions?access_token=yyyyyyyyyyy&content_id=c93e3586250ff60181b6c2f0"`
+
+Parameters to transfer:
+
+* `access_token`:​ API identification token
+* `content_id`:​ Content’s ID to which the intervention is to be associated
 
 #### Closing a bot intervention
+
 In the case where you would have opened a bot intervention via API, it is also possible to close this intervention via API when the support is ended. This will allow to close the intervention when the bot is fully capable of managing the entirety of the conversation or when the customer disconnects at some point during the conversation. To complete this task you must setup the following request:
+
 Description of the API request:
+
 Closing an intervention
+
 This method closes an intervention.
+
 Caveats:
+
 If the intervention is already being closed, it will return a 409 error.
 To be able to close an intervention, it must meet the following criteria otherwise a 403 will be raised:
 
@@ -431,10 +434,10 @@ To be able to close an intervention, it must meet the following criteria otherwi
 edit permissions
 * Access-Token agent MUST have read access on the source
 
-**HTTP method:​** `PUT`
-**Path:​** `/1.0/interventions/:id/close`
-**Pagination:​** no.
-**Authorization**:​ no, but it renders an error if intervention can’t be closed (see caveats)
+* **HTTP method:​** `PUT`
+* **Path:​** `/1.0/interventions/:id/close`
+* **Pagination:​** no.
+* **Authorization**:​ no, but it renders an error if intervention can’t be closed (see caveats)
 
 Format of the reply:
 
@@ -484,15 +487,19 @@ Parameters to transfer :
 #### Closing a thread
 
 It is possible yet optional to close a thread via API, this will block the agent from replying again on the thread in question. In the case where the user disconnects during the conversation the agent no longer needs to answer. This can be achieved by activating the following request.
+
 Description of the API request:
-Close a thread
+
+**Close a thread**
+
 Starts a job to close a thread. It returns the thread but as the job is asynchronous, the state of the “close” attribute in the returned object do not is the one when the job started.
+
 If token’s user does not have “read” on thread’s source a 404 HTTP response will be returned. Returns a 403 if the thread cannot be closed or if the user does not have the permission to close a thread.
 
-**HTTP method:​** PUT
-**Path:​** `/1.0/content_threads/:id/close`
-**Pagination:​** no.
-**Authorization:​** no.
+* **HTTP method:​** PUT
+* **Path:​** `/1.0/content_threads/:id/close`
+* **Pagination:​** no.
+* **Authorization:​** no.
 
 Format of the reply:
 
@@ -539,12 +546,13 @@ In the failure scenario where the AI is not able to answer a customer inquiry se
 Description of the API request:
 
 **Get all connected agents status**
+
 This method get all currently connected agents & their status.
 
-**HTTP method:​** GET
-**Path:**​ `/1.0/status`
-**Pagination:​** no.
-**Authorization:**​ only users that have the right to monitor the task view.
+* **HTTP method:​** GET
+* **Path:**​ `/1.0/status`
+* **Pagination:​** no.
+* **Authorization:**​ only users that have the right to monitor the task view.
 
 Format of the answer:
 
@@ -614,13 +622,12 @@ Description of the API request:
 
 This method updates the categories of a thread. If token’s user does not have “read” on thread’s source a 404 HTTP response will be returned. If the thread is already being categorized, a 409 HTTP response will be returned.
 
-**HTTP method:​** `PUT`
-**Path:​** `/1.0/content_threads/:id/update_categories`
-**Pagination:​** no.
-**Authorization:​** no.
-**Extra parameters:**
-
-* `thread_category_ids`: An array containing the new categories to set on the thread.
+* **HTTP method:​** `PUT`
+* **Path:​** `/1.0/content_threads/:id/update_categories`
+* **Pagination:​** no.
+* **Authorization:​** no.
+* **Extra parameters:**
+  * `thread_category_ids`: An array containing the new categories to set on the thread.
 
 Format of the answer:
 
@@ -660,7 +667,6 @@ Parameters to transfer:
 * `id`:​ ID of the conversation thread to recategorize
 * `access_token`:​ API identification token
 * `thread_category_ids[]`:​ IDs of the categories setup on the conversation thread
-
 
 For more information concerning the functioning of Dimelo Digital’s REST API and the entirety of the endpoints available, please refer to our documentation dedicated to Dimelo Digital’s REST API.
 
