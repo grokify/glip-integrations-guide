@@ -61,7 +61,6 @@ PUT /restapi/v1.0/account/{accountId}/phone-number/{phoneNumberId}
 }
 ```
 
-
 ## Assign Numbers to Queues
 
 Queue should be designed to use propagage "Phone Number Name"
