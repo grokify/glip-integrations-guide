@@ -24,7 +24,7 @@ Below is a list of documentation that we recommend you read carefully beforehand
 
 * **DD Webhook API:** Functionality that allows automatic events concerning the message’s life-cycle from Dimelo Digital Platform to be sent to a predefined url
   * Documentation:​ ​https://bit.ly/dimelo_webhook_api
-* **DD REST API:​** Dimelo Digital ‘s API which allows to retrieve data stored in it.
+* **DD REST API:​** Dimelo Digital’s API which allows to retrieve data stored in it.
   * Documentation:​ ​https://bit.ly/dimelo_REST_API
 
 ## Functioning
